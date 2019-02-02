@@ -17,7 +17,7 @@ Shadow.addHandler(function(event, obj) {
         // Shadow wants us to change local state - do it.
         state.on = obj.on;
         GPIO.set_mode(led, GPIO.MODE_OUTPUT);
-        GPIO.write(led, state.on ? 1 : 0);
+        GPIO.write(led, state.on ? 0 : 1);
         print('LED on ->', state.on);
       } else {
         print('Dont know how to handle key', key);
