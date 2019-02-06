@@ -16,3 +16,6 @@ filesystem:
 libs:
   - origin: https://github.com/mongoose-os-libs/boards
   - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+
+config_schema:
+  - ["device.id", "light"]
